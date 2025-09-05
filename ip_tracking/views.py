@@ -5,7 +5,7 @@ from django_ratelimit.decorators import ratelimit
 def sensitive_view(request):
     return HttpResponse("This is a rate-limited view.")
 
-# Example of a login view if you have one
+# Example of a login view with rate limiting
 # from django.contrib.auth.views import LoginView
 # from django.utils.decorators import method_decorator
 
